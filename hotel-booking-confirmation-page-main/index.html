@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotel booking confirmation page</title>
+<link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+
+<input type="checkbox" id="menu-toggle">
+
+<div class="layout">
+
+  <label class="scrim" for="menu-toggle"></label>
+
+  <!-- ================= SIDEBAR ================= -->
+  <aside class="sidebar">
+
+    <div class="logo">
+      <svg class="icon" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4"/>
+        <path d="M12 2.8v2.4M12 18.8v2.4M2.8 12h2.4M18.8 12h2.4M5.2 5.2l1.7 1.7M17.1 17.1l1.7 1.7M18.8 5.2l-1.7 1.7M6.9 17.1l-1.7 1.7"/>
+      </svg>
+      <div class="logo-text">
+        <span class="maison">Maison</span>
+        <span><strong>Soleil</strong></span>
+      </div>
+      <label class="menu-close" for="menu-toggle">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </label>
+    </div>
+
+    <nav class="nav">
+      <a href="#" class="active">
+        <svg class="icon" viewBox="0 0 24 24">
+          <path d="M3 19v-8.5A1.5 1.5 0 0 1 4.5 9h15A1.5 1.5 0 0 1 21 10.5V19"/>
+          <path d="M3 16h18"/>
+          <path d="M6 9V7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2"/>
+        </svg>
+        Your stay
+        <span class="badge">1</span>
+      </a>
+      <a href="#">
+        <svg class="icon" viewBox="0 0 24 24">
+          <path d="m4 11 8-7 8 7"/>
+          <path d="M6.5 9.5V19h11V9.5"/>
+        </svg>
+        The house
+      </a>
+      <a href="#">
+        <svg class="icon" viewBox="0 0 24 24">
+          <path d="M12 21c-4.2-3.7-6.3-6.9-6.3-9.8a6.3 6.3 0 0 1 12.6 0c0 2.9-2.1 6.1-6.3 9.8Z"/>
+          <circle cx="12" cy="11" r="2.2"/>
+        </svg>
+        Around town
+      </a>
+      <a href="#">
+        <svg class="icon" viewBox="0 0 24 24">
+          <path d="M4.5 15.5a7.5 7.5 0 0 1 15 0"/>
+          <path d="M3 15.5h18"/>
+          <path d="M12 8V7"/>
+          <circle cx="12" cy="5.6" r="1"/>
+        </svg>
+        Breakfast
+      </a>
+      <a href="#">
+        <svg class="icon" viewBox="0 0 24 24">
+          <rect x="3.5" y="5.5" width="17" height="13" rx="2.5"/>
+          <path d="m5 8 7 5 7-5"/>
+        </svg>
+        Messages
+      </a>
+    </nav>
+
+    <div class="weather">
+      <span class="sun-blob"></span>
+      <p class="label">TODAY IN CASSIS</p>
+      <p class="temp">27&deg;</p>
+      <p class="desc">Sunny &middot; light breeze</p>
+    </div>
+
+    <div class="sidebar-footer">
+      <p>EST. 1987</p>
+      <p>MAISON SOLEIL &middot; 12 RUE DES OLIVIERS &middot; CASSIS</p>
+      <p>&copy; 2026 MAISON SOLEIL</p>
+    </div>
+
+  </aside>
+
+  <!-- ================= MAIN ================= -->
+  <main class="main">
+
+    <div class="mobile-bar">
+      <div class="logo" style="border:none; margin:0; padding:0;">
+        <svg class="icon" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2.8v2.4M12 18.8v2.4M2.8 12h2.4M18.8 12h2.4M5.2 5.2l1.7 1.7M17.1 17.1l1.7 1.7M18.8 5.2l-1.7 1.7M6.9 17.1l-1.7 1.7"/>
+        </svg>
+        <div class="logo-text">
+          <span class="maison">Maison</span>
+          <span><strong>Soleil</strong></span>
+        </div>
+      </div>
+      <label class="menu-btn" for="menu-toggle">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </label>
+    </div>
+
+    <div class="top-bar">
+      <div>
+        <p class="eyebrow">BOOKING &middot; CONFIRMED</p>
+        <h1>Bienvenue, <em>Lucia.</em></h1>
+      </div>
+      <div class="buttons">
+        <a class="btn btn-light" href="#">Print receipt</a>
+        <a class="btn btn-dark" href="#">Add to calendar</a>
+      </div>
+    </div>
+
+    <!-- fan: receipt + welcome card -->
+    <section class="fan">
+
+      <svg class="icon fan-sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4"/>
+        <path d="M12 2.8v2.4M12 18.8v2.4M2.8 12h2.4M18.8 12h2.4M5.2 5.2l1.7 1.7M17.1 17.1l1.7 1.7M18.8 5.2l-1.7 1.7M6.9 17.1l-1.7 1.7"/>
+      </svg>
+
+      <div class="receipt">
+        <div class="receipt-top">
+          <span>RECEIPT</span>
+          <span class="num">&numero; MS-2026<br>0421-AH</span>
+        </div>
+        <h2>Your stay</h2>
+        <div class="dashed-line"></div>
+
+        <div class="dates">
+          <div>
+            <p class="small-label">CHECK IN</p>
+            <p class="date-big">25 Apr</p>
+            <p class="date-small">Saturday &middot; 15:00</p>
+          </div>
+          <div>
+            <p class="small-label">CHECK OUT</p>
+            <p class="date-big">29 Apr</p>
+            <p class="date-small">Wednesday &middot; 11:00</p>
+          </div>
+        </div>
+
+        <div class="dashed-line"></div>
+
+        <p class="price-row"><span>Room &middot; La Garrigue &times; 4 nights</span><span>&euro; 620.00</span></p>
+        <p class="price-row"><span>Breakfast &times; 2 guests</span><span>&euro; 96.00</span></p>
+        <p class="price-row"><span>Tourist tax</span><span>&euro; 14.40</span></p>
+
+        <div class="total-row">
+          <span class="small-label">TOTAL PAID</span>
+          <span class="amount">&euro; 730.40</span>
+        </div>
+
+        <div class="receipt-bottom">
+          <span class="paid-text">PAID &middot; WISE &middot; GBP</span>
+          <span class="barcode"></span>
+        </div>
+      </div>
+
+      <div class="welcome">
+        <div class="welcome-top">
+          <span>WELCOME CARD</span>
+          <svg class="icon" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2.8v2.4M12 18.8v2.4M2.8 12h2.4M18.8 12h2.4M5.2 5.2l1.7 1.7M17.1 17.1l1.7 1.7M18.8 5.2l-1.7 1.7M6.9 17.1l-1.7 1.7"/>
+          </svg>
+        </div>
+        <div class="welcome-dash"></div>
+        <p class="note">A note from your host,</p>
+        <h2>Margaux.</h2>
+        <p class="message">We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat &ndash; Poivre &ndash; pretending not to notice you.</p>
+        <div class="room">
+          <p class="small-label">ROOM</p>
+          <p class="room-name">La Garrigue</p>
+        </div>
+      </div>
+
+    </section>
+
+    <p class="fan-hint">&#10022; HOVER TO FAN &#10022;</p>
+
+    <!-- info cards -->
+    <section class="cards">
+
+      <div class="card">
+        <div class="card-head">
+          <span class="card-icon bg-orange">
+            <svg class="icon" viewBox="0 0 24 24">
+              <circle cx="7.5" cy="16.5" r="3.5"/>
+              <path d="M10.2 13.8 20 4"/>
+              <path d="m15 9 3 3"/>
+            </svg>
+          </span>
+          <span class="card-label orange">ARRIVAL</span>
+          <span class="card-num orange">01</span>
+        </div>
+        <h3>Check-in from 15:00</h3>
+        <p class="card-sub">Sat, 25 April</p>
+        <p class="card-text">Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <span class="card-icon bg-blue">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M3.5 9.5a13 13 0 0 1 17 0"/>
+              <path d="M6.5 13a9 9 0 0 1 11 0"/>
+              <path d="M9.5 16.3a4.5 4.5 0 0 1 5 0"/>
+              <circle cx="12" cy="19.2" r="1.2" fill="currentColor" stroke="none"/>
+            </svg>
+          </span>
+          <span class="card-label blue">WIFI</span>
+          <span class="card-num blue">02</span>
+        </div>
+        <h3>Le Soleil &middot; Guest</h3>
+        <p class="card-sub">Password below</p>
+        <div class="wifi-row">
+          <span class="name">NETWORK</span>
+          <span>Le Soleil &middot; Guest</span>
+        </div>
+        <div class="wifi-row">
+          <span class="name">PASSWORD</span>
+          <span>soleil-2026 <button class="copy-btn">COPY</button></span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <span class="card-icon bg-pink">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M4.5 15.5a7.5 7.5 0 0 1 15 0"/>
+              <path d="M3 15.5h18"/>
+              <path d="M12 8V7"/>
+              <circle cx="12" cy="5.6" r="1"/>
+            </svg>
+          </span>
+          <span class="card-label pink">BREAKFAST</span>
+          <span class="card-num pink">03</span>
+        </div>
+        <h3>Served 8 &ndash; 10:30</h3>
+        <p class="card-sub">On the terrace</p>
+        <p class="card-text">Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.</p>
+      </div>
+
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>
